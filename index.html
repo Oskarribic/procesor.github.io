@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="opis" content="Kratek opis">
+    <meta name="avtor" content="Oskar Ribič">
+    <title>Delovanje Procesorja</title>
+</head>
+
+<body>
+
+    <!-- Glava -->
+    <header>
+        <div class="head1">
+            Delovanje Procesorja
+        </div>
+        <div class="head2">
+            Razumevanje delovanja in zgradbe procesorjev
+        </div>
+    </header>
+
+    <!-- Meni vsebin -->
+    <nav class="meni">
+        <a href="#zgradba">Zgradba Procesorja</a>
+        <a href="#delovanje">Delovanje Procesorja</a>
+        <a href="#razvoj">Razvoj Procesorja</a>
+        <a href="#tipi">Tipi Procesorjev Danes</a>
+        <a href="#viri">Viri</a>
+    </nav>
+    
+    <!-- Telo -->
+    <main class="vsebina_telesa">
+        <section id="razvoj">
+            <h2>Razvoj Procesorja</h2>
+            <ul>
+                <li>Intel 4004 (Prvi komercialni mikroprocesor, 4 - bitni. Bil je zelo počasen, praktično neuporaben. Služil je le kot kalkulator.)</li>
+                <li>Intel 8008 (Prvi 8 - bitni procesor, služil je le v terminalih, deloval pa je bolj kot ne samo kot kalkulator. Vseeno je bil še zelo počasen.)</li>
+                <li>Zilog Z80 (Procesor, ki je malo modernejši kot Intel 8008. Znan je le po tem, da je bil to prvi proceosr, katerega ideja je bila, da bi služil v domačih računalnik. Bil pa je tudi združljiv z Intel 8008.)</li>
+                <li>Intel 8086 (Prvi procesor, ki se je pojavil v domačih računalnikih. Deloval je na arhitekturi x86.)</li>
+                <li>Intel 80386 (Prvi večopravilen procesor, 16 - bitni. Značilnosti tega procesorja so, da je lahko uporabnik izvajal več ukazov naenkrat. Vseeno, pa v primerjavi z današnjimi procesorji -)</li>
+            </ul>
+            <table class="table-razvoj">
+                <tr>
+                    <td><img id="intel4004" src="slike/intel4004.jpg" alt="Intel 4004"></td>
+                    <td><img id="intel8008" src="slike/Intel8008.jpg" alt="Intel 8008"></td>
+                </tr>
+                <tr>
+                    <td><img src="slike/Zilog_Z80.jpg" alt="Zilog Z80"></td>
+                    <td><img src="slike/L_intel-c8086.jpg" alt="Intel 8086"></td>
+                </tr>
+            </table>
+            <p>
+                Procesorji so se razvijali skozi desetletja. Prvi mikroprocesorji so bili enostavni, z majhno zmogljivostjo. Sčasoma so postali hitrejši, zmogljivejši in bolj učinkoviti. Danes so procesorji ključni del vsakega računalnika, saj omogočajo izvajanje kompleksnih nalog.
+            </p>
+        </section>
+
+        <section id="delovanje">
+            <h2>Delovanje Procesorja</h2>
+            <table class="table-delovanje">
+                <tr>
+                    <td>
+                        <p>
+                            Procesor deluje tako, da izvaja zaporedje ukazov, ki jih prejme iz računalniškega pomnilnika. Vsak ukaz se obdela v več korakih: pridobivanje ukaza, dekodiranje, izvajanje in shranjevanje rezultatov. Procesorji uporabljajo ure za sinhronizacijo teh korakov, kar omogoča hitro in učinkovito obdelavo podatkov. Nahaja se na matični plošči.
+                        </p>
+                    </td>
+                    <td>
+                        <img src="slike/prava.jpg" alt="Matična plošča">
+                    </td>
+                </tr>
+            </table>
+            <ul>
+                <li>ALU (Aritmetično-logična enota)</li>
+                <p>
+                    ALU izvaja aritmetične in logične operacije, kot so seštevanje, odštevanje, množenje, deljenje ter logične operacije AND, OR, NOT in XOR. Je ključna komponenta za izvajanje računskih operacij v procesorju.
+                </p>
+                <li>Krmilna enota</li>
+                <p>
+                    Krmilna enota usmerja delovanje procesorja. Dekodira ukaze iz pomnilnika, določa, katere operacije bodo izvedene, in usmerja tok podatkov med različnimi komponentami procesorja.
+                </p>
+                <li>Registri</li>
+                <p>
+                    Registri so majhne, hitre pomnilniške enote znotraj procesorja, ki shranjujejo podatke in ukaze, ki jih procesor trenutno obdeluje. Omogočajo hitro dostopanje do podatkov, kar povečuje učinkovitost procesorja.
+                </p>
+                <li>Predpomnilnik</li>
+                <p>
+                    Predpomnilnik je vrsta hitrega, majhnega pomnilnika, ki se nahaja znotraj ali blizu procesorja. Njegova glavna naloga je začasno shranjevanje pogosto dostopnih podatkov in ukazov, da se izboljša hitrost dostopa do teh podatkov v primerjavi s počasnejšim glavnim pomnilnikom (RAM).
+                </p>
+                <li>Vhodno-izhodne enote</li>
+                <p>
+                    Vhodne in izhodne enote (I/O enote) v procesorju služijo za komunikacijo procesorja z zunanjimi napravami in perifernimi napravami. Njihova naloga je prenašanje podatkov med procesorjem in različnimi vhodnimi (npr. tipkovnica, miška) ter izhodnimi napravami (npr. monitor, tiskalnik).
+            </ul>
+        </section>
+
+        <section id="zgradba">
+            <h2>Zgradba Procesorja</h2>
+            <p>
+                Procesor je sestavljen iz več ključnih komponent, vključno z aritmetično-logično enoto (ALU), krmilno enoto in registri. Te komponente delujejo skupaj, da omogočajo izvajanje ukazov in obdelavo podatkov:
+            </p>
+            <ul>
+                <li>ALU (Aritmetično-logična enota)</li>
+                <li>Krmilna enota</li>
+                <li>Registri</li>
+                <li>Predpomnilnik</li>
+                <li>Vhodno-izhodne enote</li>
+            </ul>
+        </section>
+
+        <section id="tipi">
+            <h2>Tipi Procesorjev Danes</h2>
+            <ul>
+                <li>CPU, GPU, mobilni procesorji, procesorji za vgrajene sisteme, procesorji za strežnike, procesorji za umetno inteligenco</li>
+                <li>Med nakupovanjem procesorja ali računalnika, velikrat naletimo na enoto Ghz. To je enota, ki nam pove, koliko ciklov lahko naredi v eni sekundi, torej koliko ukazov lahko izvede v eni sekundi. Večja kot je vrednost pri tej enoti, boljši je proceosr, vendar pa ni to edini faktor, ki vpliva na hitrost procesorja. </li>
+            </ul>
+            <p>
+                Danes obstaja več različnih vrst procesorjev, prilagojenih za specifične naloge:
+            </p>
+            <ul>
+                <li><strong>CPU (Central Processing Unit):</strong> Osnovni procesor, ki je odgovoren za izvajanje večine nalog v računalniku. Upravljajo logične in aritmetične operacije, izvajajo programe in upravljajo sistemske vire.</li>
+                <li><strong>GPU (Graphics Processing Unit):</strong> Posebej zasnovani za obdelavo grafike in paralelnih izračunov. So ključni pri igrah, vizualizaciji in strojni inteligenci.</li>
+                <li><strong>Mobilni procesorji:</strong> Namenjeni uporabi v mobilnih napravah, kot so pametni telefoni in tablični računalniki. Optimizirani so za nizko porabo energije in visoko zmogljivost.</li>
+                <li><strong>Procesorji za vgrajene sisteme:</strong> Uporabljeni v napravah z določeno funkcijo, kot so avtomobili, gospodinjski aparati in industrijske naprave. So prilagojeni za posebne aplikacije in okolja.</li>
+                <li><strong>Procesorji za strežnike:</strong> Namenjeni za obdelavo velikih količin podatkov in izvajanje večopravilnosti. Uporabljajo se v podatkovnih centrih in strežniških sistemih.</li>
+                <li><strong>Procesorji za umetno inteligenco:</strong> Posebej zasnovani za izvajanje nalog, povezanih z umetno inteligenco in strojim učenjem. Ponuja visoko zmogljivost za paralelno obdelavo podatkov.</li>
+            </ul>
+        </section>
+
+        <section id="viri">
+            <h2>Viri vsebine</h2>
+            <ul>
+                <li>Prenosnik: procesor, kaj pomenijo njegove oznake. Dostopno prek: <a href="https://www.prenosnik.info/procesor-kaj-pomenijo-njegove-oznake/" target="_blank">https://www.prenosnik.info/procesor-kaj-pomenijo-njegove-oznake/</a></li>
+                <li>Univerza v Ljubljani: Procesor. Dostopno prek: <a href="http://sasa.musiclab.si/eri1/RACUNALNISTVO_OLD/ZGRADBA_RACUNALNIKA/procesor.html" target="_blank">http://sasa.musiclab.si/eri1/RACUNALNISTVO_OLD/ZGRADBA_RACUNALNIKA/procesor.html</a></li>
+                <li>CPU proti GPU - pravilna izbira. Dostopno prek: <a href="https://introserv.com/sl/blog/cpu-vs-gpu/" target="_blank">https://introserv.com/sl/blog/cpu-vs-gpu/</a></li>
+                <li>Uvod v računalništvo. Dostopno prek: <a href="https://quizlet.com/839239656/uvod-v-racunalnistvo-urac-flash-cards/" target="_blank">https://quizlet.com/839239656/uvod-v-racunalnistvo-urac-flash-cards/</a></li>
+                <li>Zgradba in delovanje centralne procesne enote. Dostopno prek: <a href="http://sasa.musiclab.si/eri1/RACUNALNISTVO/arhitekturaRS/centralnaProcesnaEnota.html" target="_blank">http://sasa.musiclab.si/eri1/RACUNALNISTVO/arhitekturaRS/centralnaProcesnaEnota.html</a></li>
+                <li>Centralni procesor. Dostopno prek: <a href="https://sl.wikipedia.org/wiki/Centralni_procesor" target="_blank">https://sl.wikipedia.org/wiki/Centralni_procesor</a></li>
+            </ul>
+
+            <h2>Viri slik</h2>
+            <ul>
+                <li>Flickr. Avtor: Kenneth Martin. Dostopno prek: <a href="https://www.flickr.com/photos/9479603@N02/4200968953" target="_blank">https://www.flickr.com/photos/9479603@N02/4200968953/</a> </li>
+                <li>Wikimedia Commons. Avtor: Thomas Nguyen Dostopno prek: <a href="https://commons.wikimedia.org/wiki/File:Intel_C4004_b.jpg" target="_blank">https://commons.wikimedia.org/wiki/File:Intel_C4004_b.jpg/</a></li>
+                <li>Wikimedia Commons. Avtor: Gennadiy Shvets Dostopno prek: <a href="https://commons.wikimedia.org/wiki/File:Zilog_Z80.jpg" target="_blank">https://commons.wikimedia.org/wiki/File:Zilog_Z80.jpg/</a> </li>
+                <li>Wikimedia Commons. Avtor: UN RodolfoNeres. Dostopno prek: <a href="https://commons.wikimedia.org/wiki/File:L_intel-c8086.jpg" target="_blank">https://commons.wikimedia.org/wiki/File:L_intel-c8086.jpg/</a>
+                <li>Wikimedia Commons. Avtor: Ilyka Plekhanov. Dostopno prek: <a href="https://commons.wikimedia.org/wiki/File:Ryzen_5_1600_CPU_on_a_motherboard.jpg" target="_blank">https://commons.wikimedia.org/wiki/File:Ryzen_5_1600_CPU_on_a_motherboard.jpg/</a>
+
+            </ul>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        &copy; 2024 Delovanje Procesorja. Vse pravice pridržane. Avtor: Ribič Oskar. CC BY - NC
+    </footer>
+</body>
+</html>

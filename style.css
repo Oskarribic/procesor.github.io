@@ -1,0 +1,139 @@
+
+body {
+    font-family: 'Ariel' serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    
+}
+
+
+header {
+    background-color: #004bb4;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .head1 {
+    font-size: 2em; /*višina  glavnega naslova */
+    margin: 0;
+}
+
+header.podnaslov {
+    font-size: 1.2em; /*višina podnaslova */
+    margin: 0;
+}
+
+nav.meni {
+    background-color: #7db1ff;
+    overflow: hidden;
+}
+
+nav.meni a {
+    /* meni bar, visina, barva itd */
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    float: left;
+    width: 20%; 
+}
+
+nav.meni a:hover {
+    background-color: #5a5a5a; /*ko prtisneš kak se ti obarva*/
+}
+
+main.body_sec {
+    padding: 20px;
+}
+
+section {
+    /* pr vsakem sectionu, nujno rabim */
+    display: none;
+    background-color: rgb(254, 254, 254); /* barva vsebina */
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+section:target {
+    display: block;
+} /* pokaže na tisto kar klikneš */
+
+footer {
+    /* noga */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px 5%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* To je za majhne zaslone/telefone. */
+@media only screen and (max-width: 768px) {
+    nav.menu a {
+        width: 100%; 
+        float: none; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    header .head1 {
+        font-size: 1.5em;
+    }
+
+    header .head2 {
+        font-size: 1em;
+    }
+
+    nav.menu a {
+        padding: 10px; 
+    }
+
+    section {
+        padding: 15px; 
+        font-size: 0.9em; 
+    }
+}
+
+
+.table-razvoj {
+    width: 30%;
+    border-collapse: collapse;
+
+}
+.table-razvoj td {
+    width: 15%;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid black; /*obroba*/
+}
+.table-razvoj img   {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* delovanje procesorja tabela */
+.table-delovanje {
+    width: 50%;
+    border-collapse: collapse;
+    
+}
+.table-delovanje td {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black; /*obroba */
+}
+.table-delovanje img {
+    height: 150px;
+    width: auto;
+}
